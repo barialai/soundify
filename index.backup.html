@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <meta name="description" content="Soundify — rent professional speakers, microphones, DJ equipment and complete event sound systems across Bengaluru." />
+  <title>Soundify — Sound equipment rental in Bengaluru</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Soundify home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>soundify</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#equipment">Equipment</a>
+        <a href="#packages">Packages</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#why-soundify">Why Soundify</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="text-link desktop-only" href="tel:+919999999999">Need help?</a>
+        <a class="btn btn-small btn-primary" href="#booking">Book equipment</a>
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#equipment">Equipment</a>
+      <a href="#packages">Packages</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#why-soundify">Why Soundify</a>
+      <a href="tel:+919999999999">Call support</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Now serving Bengaluru</div>
+          <h1>Professional sound.<br><span>Delivered.</span></h1>
+          <p>Rent speakers, microphones, DJ gear and complete event sound systems — delivered, installed and ready for your event.</p>
+
+          <form class="hero-search" id="booking">
+            <label class="search-field">
+              <span class="field-label">Event location</span>
+              <span class="field-row">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.2 7-12A7 7 0 1 0 5 9c0 6.8 7 12 7 12Zm0-9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5Z"/></svg>
+                <input id="locationInput" type="text" value="Bengaluru" aria-label="Event location" />
+              </span>
+            </label>
+
+            <label class="search-field">
+              <span class="field-label">Event date</span>
+              <span class="field-row">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3m10-3v3M4 9h16M5 4h14a1 1 0 0 1 1 1v15H4V5a1 1 0 0 1 1-1Z"/></svg>
+                <input id="dateInput" type="date" aria-label="Event date" />
+              </span>
+            </label>
+
+            <button class="search-submit" type="submit" aria-label="Search equipment">
+              <span>Find equipment</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </form>
+
+          <div class="hero-proof">
+            <div class="avatar-stack" aria-hidden="true">
+              <span>DJ</span><span>EV</span><span>CO</span>
+            </div>
+            <p><strong>Trusted setups for every event</strong><br>Parties · Weddings · Corporate · Live music</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Premium speaker setup">
+          <div class="visual-card">
+            <div class="visual-image"></div>
+            <div class="visual-gradient"></div>
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">✓</span>
+              <div><strong>Setup included</strong><small>On selected packages</small></div>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <div><small>Starting from</small><strong>₹999/day</strong></div>
+              <span class="mini-wave"><i></i><i></i><i></i><i></i><i></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" id="equipment">
+      <div class="container">
+        <div class="section-heading compact">
+          <div>
+            <span class="kicker">Browse by category</span>
+            <h2>Everything your event needs.</h2>
+          </div>
+          <a class="arrow-link" href="#catalog">View all equipment <span>↗</span></a>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card" href="#catalog" data-filter="speakers">
+            <div class="category-icon speaker-icon"><span></span><span></span></div>
+            <div><strong>Speakers</strong><small>PA · Active · Subwoofers</small></div>
+            <span class="round-arrow">↗</span>
+          </a>
+          <a class="category-card" href="#catalog" data-filter="microphones">
+            <div class="category-icon mic-icon"><span></span></div>
+            <div><strong>Microphones</strong><small>Wireless · Wired · Lapel</small></div>
+            <span class="round-arrow">↗</span>
+          </a>
+          <a class="category-card" href="#catalog" data-filter="dj">
+            <div class="category-icon deck-icon"><span></span><span></span></div>
+            <div><strong>DJ Equipment</strong><small>Controllers · Mixers · Players</small></div>
+            <span class="round-arrow">↗</span>
+          </a>
+          <a class="category-card" href="#catalog" data-filter="mixers">
+            <div class="category-icon mixer-icon"><span></span><span></span><span></span></div>
+            <div><strong>Mixers</strong><small>Analog · Digital · Live</small></div>
+            <span class="round-arrow">↗</span>
+          </a>
+          <a class="category-card" href="#packages" data-filter="packages">
+            <div class="category-icon package-icon"><span></span><span></span></div>
+            <div><strong>Event Packages</strong><small>Ready-made complete setups</small></div>
+            <span class="round-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalog">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="kicker">Popular rentals</span>
+            <h2>Book the gear. We handle the rest.</h2>
+          </div>
+          <p>Professional equipment for small gatherings, large venues and everything in between.</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card" data-category="speakers">
+            <div class="product-media media-speaker">
+              <span class="stock-pill">Available</span>
+              <button class="wishlist" type="button" aria-label="Save product">♡</button>
+              <div class="product-art speaker-art"><div class="woofer"></div><div class="tweeter"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-type">Speaker</span>
+              <h3>Premium 12” Active PA Speaker</h3>
+              <p>High-output powered speaker for parties, weddings and corporate events.</p>
+              <div class="product-meta"><span>Up to 150 guests</span><span>1,000W class</span></div>
+              <div class="product-bottom"><div><strong>₹1,499</strong><small>/ day</small></div><button class="add-btn" type="button">Add +</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="microphones">
+            <div class="product-media media-mic">
+              <span class="stock-pill">Available</span>
+              <button class="wishlist" type="button" aria-label="Save product">♡</button>
+              <div class="product-art mic-art"><div class="mic-head"></div><div class="mic-body"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-type">Microphone</span>
+              <h3>Dual Wireless Microphone Set</h3>
+              <p>Reliable wireless vocal set for speeches, performances and presentations.</p>
+              <div class="product-meta"><span>2 handheld mics</span><span>Long-range RF</span></div>
+              <div class="product-bottom"><div><strong>₹899</strong><small>/ day</small></div><button class="add-btn" type="button">Add +</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="dj">
+            <div class="product-media media-dj">
+              <span class="stock-pill">Popular</span>
+              <button class="wishlist" type="button" aria-label="Save product">♡</button>
+              <div class="product-art dj-art"><div class="jog left"></div><div class="jog right"></div><div class="deck-lines"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-type">DJ Equipment</span>
+              <h3>4-Channel DJ Controller</h3>
+              <p>Club-style controller with performance pads and pro mixing controls.</p>
+              <div class="product-meta"><span>4 channels</span><span>Performance FX</span></div>
+              <div class="product-bottom"><div><strong>₹2,499</strong><small>/ day</small></div><button class="add-btn" type="button">Add +</button></div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="mixers">
+            <div class="product-media media-mixer">
+              <span class="stock-pill">Available</span>
+              <button class="wishlist" type="button" aria-label="Save product">♡</button>
+              <div class="product-art mixer-art"><div class="faders"></div><div class="knobs"></div></div>
+            </div>
+            <div class="product-info">
+              <span class="product-type">Mixer</span>
+              <h3>12-Channel Live Audio Mixer</h3>
+              <p>Flexible live mixer for bands, panels, stage shows and multi-mic setups.</p>
+              <div class="product-meta"><span>12 channels</span><span>Built-in FX</span></div>
+              <div class="product-bottom"><div><strong>₹1,299</strong><small>/ day</small></div><button class="add-btn" type="button">Add +</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-heading light-heading">
+          <div>
+            <span class="kicker">Not sure what to choose?</span>
+            <h2>Pick your event.<br>We’ll build the setup.</h2>
+          </div>
+          <p>Complete packages make booking easy. Every setup includes the right equipment mix, cables and optional delivery + installation.</p>
+        </div>
+
+        <div class="package-grid">
+          <article class="package-card package-featured">
+            <div class="package-top">
+              <span class="package-number">01</span>
+              <span class="package-tag">Most booked</span>
+            </div>
+            <div>
+              <span class="package-label">House Party</span>
+              <h3>Bring the room alive.</h3>
+              <p>Ideal for birthdays, rooftop parties and home celebrations.</p>
+            </div>
+            <ul>
+              <li>2 × Active speakers</li>
+              <li>1 × Wireless microphone</li>
+              <li>Compact mixer</li>
+              <li>Speaker stands + cables</li>
+            </ul>
+            <div class="package-footer">
+              <div><small>From</small><strong>₹3,999</strong><span>/ event</span></div>
+              <a href="#booking" class="circle-cta">↗</a>
+            </div>
+          </article>
+
+          <article class="package-card">
+            <div class="package-top"><span class="package-number">02</span><span class="package-tag neutral">Premium</span></div>
+            <div><span class="package-label">Wedding</span><h3>Big moments. Bigger sound.</h3><p>Built for wedding halls, receptions and open-air celebrations.</p></div>
+            <ul>
+              <li>4 × Premium PA speakers</li>
+              <li>2 × Subwoofers</li>
+              <li>4 × Wireless microphones</li>
+              <li>Digital mixer + sound engineer</li>
+            </ul>
+            <div class="package-footer"><div><small>From</small><strong>₹14,999</strong><span>/ event</span></div><a href="#booking" class="circle-cta">↗</a></div>
+          </article>
+
+          <article class="package-card">
+            <div class="package-top"><span class="package-number">03</span><span class="package-tag neutral">Business</span></div>
+            <div><span class="package-label">Corporate Event</span><h3>Clear audio. Zero hassle.</h3><p>For conferences, launches, workshops and company events.</p></div>
+            <ul>
+              <li>2 × Premium speakers</li>
+              <li>2 × Wireless microphones</li>
+              <li>Professional mixer</li>
+              <li>Technician + setup support</li>
+            </ul>
+            <div class="package-footer"><div><small>From</small><strong>₹6,999</strong><span>/ event</span></div><a href="#booking" class="circle-cta">↗</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="kicker">Simple from start to finish</span>
+          <h2>Book sound in four easy steps.</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card"><span>01</span><div class="step-icon">⌖</div><h3>Tell us where & when</h3><p>Choose your Bengaluru location and event date.</p></div>
+          <div class="step-card"><span>02</span><div class="step-icon">＋</div><h3>Choose your setup</h3><p>Pick equipment yourself or choose a ready-made package.</p></div>
+          <div class="step-card"><span>03</span><div class="step-icon">⇢</div><h3>We deliver & install</h3><p>Add delivery, installation or a technician when you need it.</p></div>
+          <div class="step-card"><span>04</span><div class="step-icon">✓</div><h3>Enjoy the event</h3><p>We handle pickup after your booking is complete.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-section" id="why-soundify">
+      <div class="container why-grid">
+        <div class="why-panel">
+          <span class="kicker">Why Soundify</span>
+          <h2>Good events deserve better than “jugaad” audio.</h2>
+          <p>Soundify is built to make professional event equipment simple to discover, book and receive — without endless phone calls or confusing quotes.</p>
+          <a class="btn btn-light" href="#booking">Plan your event</a>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit"><span>01</span><h3>Verified equipment</h3><p>Every rental is checked before it leaves for your event.</p></div>
+          <div class="benefit"><span>02</span><h3>Transparent pricing</h3><p>Know your equipment, delivery and service costs upfront.</p></div>
+          <div class="benefit"><span>03</span><h3>Optional setup help</h3><p>Add installation or a sound technician whenever needed.</p></div>
+          <div class="benefit"><span>04</span><h3>Built for Bengaluru</h3><p>Local logistics, local support and faster event-day coordination.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-card">
+        <div>
+          <span class="kicker">Planning something soon?</span>
+          <h2>Tell us the event.<br>We’ll take care of the sound.</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary btn-large" href="#booking">Browse equipment</a>
+          <a class="btn btn-outline btn-large" href="https://wa.me/919999999999" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#top"><span class="brand-mark"><i></i><i></i><i></i></span><span>soundify</span></a>
+        <p>Professional sound equipment rental for events across Bengaluru.</p>
+      </div>
+      <div><strong>Explore</strong><a href="#equipment">Equipment</a><a href="#packages">Packages</a><a href="#how-it-works">How it works</a></div>
+      <div><strong>Support</strong><a href="tel:+919999999999">Call us</a><a href="mailto:hello@soundify.in">hello@soundify.in</a><a href="#">Rental terms</a></div>
+      <div><strong>Service area</strong><p>Bengaluru, Karnataka<br>More cities coming soon.</p></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Soundify. All rights reserved.</span><span>Made for louder events.</span></div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
