@@ -1335,3 +1335,91 @@ body.cart-open, body.checkout-open { overflow: hidden; }
     animation: none !important;
   }
 }
+
+
+/* ===== final hero headline alignment fix ===== */
+.hero-centered-content {
+  width: min(1040px, 100%);
+}
+.hero-centered-title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.hero-centered-title .headline-main {
+  display: block;
+  white-space: nowrap;
+  font: 800 clamp(58px, 5.75vw, 92px)/.98 "Manrope", sans-serif;
+  letter-spacing: -4.4px;
+  color: #f4f4ef;
+}
+.hero-centered-title .headline-accent {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.hero-centered-title .headline-accent em {
+  margin: 0;
+  transform: none;
+  display: inline-block;
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(42px, 4vw, 66px);
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #f4f4ef;
+}
+.hero-centered-title .headline-accent strong {
+  font: 800 clamp(52px, 5.4vw, 86px)/.98 "Manrope", sans-serif;
+  letter-spacing: -4.1px;
+  color: var(--accent);
+}
+.hero-centered-content > p {
+  margin-top: 34px;
+}
+@media (max-width: 1100px) {
+  .hero-centered-title .headline-main {
+    font-size: clamp(54px, 7vw, 78px);
+  }
+  .hero-centered-title .headline-accent {
+    gap: 12px;
+  }
+  .hero-centered-title .headline-accent em {
+    font-size: clamp(38px, 5vw, 56px);
+  }
+  .hero-centered-title .headline-accent strong {
+    font-size: clamp(46px, 6.3vw, 72px);
+  }
+}
+@media (max-width: 760px) {
+  .hero-centered-title .headline-main {
+    white-space: normal;
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -2.8px;
+  }
+  .hero-centered-title .headline-accent {
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 10px;
+    white-space: normal;
+  }
+  .hero-centered-title .headline-accent em {
+    font-size: clamp(34px, 10vw, 46px);
+  }
+  .hero-centered-title .headline-accent strong {
+    font-size: clamp(40px, 11.5vw, 56px);
+    letter-spacing: -2.6px;
+  }
+  .hero-centered-content > p {
+    margin-top: 22px;
+  }
+}
