@@ -8,7 +8,7 @@
   <title>Soundify — Sound equipment rental in Bengaluru</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -48,17 +48,21 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero hero-landing-redesign">
       <div class="hero-noise" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-left" aria-hidden="true"></div>
-      <div class="hero-orb hero-orb-right" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow"><span class="status-dot"></span> Now serving Bengaluru</div>
-          <h1>Professional<br>sound for<br><span>unforgettable events.</span></h1>
+      <div class="hero-glow hero-glow-left" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-right" aria-hidden="true"></div>
+      <div class="container hero-shell">
+        <div class="hero-product hero-product-left" aria-hidden="true">
+          <img src="hero-speaker-left.png" alt="" />
+        </div>
+
+        <div class="hero-centered-content">
+          <div class="eyebrow hero-eyebrow-centered"><span class="status-dot"></span> Now serving Bengaluru</div>
+          <h1 class="hero-centered-title">Professional sound<br><em>for</em> <span>unforgettable events.</span></h1>
           <p>Rent speakers, microphones, DJ gear and complete event sound systems — delivered, installed and ready for your event.</p>
 
-          <form class="hero-search" id="booking">
+          <form class="hero-search hero-search-centered" id="booking">
             <label class="search-field">
               <span class="field-label">Event location</span>
               <span class="field-row">
@@ -81,7 +85,7 @@
             </button>
           </form>
 
-          <div class="hero-metrics">
+          <div class="hero-metrics hero-metrics-centered">
             <div class="hero-tag-group" aria-label="Event types">
               <span class="hero-tag">DJ</span>
               <span class="hero-tag">EV</span>
@@ -100,29 +104,10 @@
               <small>Customer rating</small>
             </div>
           </div>
-
-          <div class="hero-footer-line">
-            <span></span>
-            <small>Great events sound better</small>
-          </div>
         </div>
 
-        <div class="hero-visual" aria-label="Premium speaker setup">
-          <div class="visual-stack visual-stack-back" aria-hidden="true"></div>
-          <div class="visual-stack visual-stack-mid" aria-hidden="true"></div>
-          <div class="visual-card">
-            <div class="visual-image"></div>
-            <div class="visual-gradient"></div>
-            <div class="floating-badge badge-top">
-              <span class="badge-icon">✓</span>
-              <div><strong>Setup included</strong><small>On selected packages</small></div>
-            </div>
-            <div class="floating-badge badge-bottom">
-              <div><small>Starting from</small><strong>₹999/day</strong></div>
-              <span class="mini-wave"><i></i><i></i><i></i><i></i><i></i></span>
-            </div>
-            <div class="hero-visual-note">Better events sound brighter</div>
-          </div>
+        <div class="hero-product hero-product-right" aria-hidden="true">
+          <img src="hero-speaker-right.png" alt="" />
         </div>
       </div>
     </section>
