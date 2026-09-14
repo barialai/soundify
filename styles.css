@@ -1423,3 +1423,98 @@ body.cart-open, body.checkout-open { overflow: hidden; }
     margin-top: 22px;
   }
 }
+
+
+/* ===== definitive hero centering fix ===== */
+.hero-landing-redesign .hero-shell.container {
+  display: grid !important;
+  grid-template-columns: 1fr;
+  place-items: center;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.hero-landing-redesign .hero-centered-content {
+  grid-column: 1;
+  grid-row: 1;
+  width: min(980px, calc(100vw - 500px)) !important;
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  text-align: center;
+}
+.hero-landing-redesign .hero-centered-title {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 auto !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-landing-redesign .hero-centered-title .headline-main {
+  display: block;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+.hero-landing-redesign .hero-centered-title .headline-accent {
+  display: inline-flex !important;
+  width: auto !important;
+  align-items: baseline;
+  justify-content: center;
+  align-self: center;
+  gap: 14px;
+  margin: 12px auto 0 !important;
+  white-space: nowrap;
+  text-align: center;
+}
+.hero-landing-redesign .hero-centered-title .headline-accent em {
+  position: relative;
+  top: -2px;
+  margin: 0 !important;
+  transform: none !important;
+  flex: 0 0 auto;
+}
+.hero-landing-redesign .hero-centered-title .headline-accent strong {
+  flex: 0 0 auto;
+}
+.hero-landing-redesign .hero-centered-content > p,
+.hero-landing-redesign .hero-search-centered,
+.hero-landing-redesign .hero-metrics-centered {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 1180px) {
+  .hero-landing-redesign .hero-centered-content {
+    width: min(860px, calc(100vw - 350px)) !important;
+  }
+}
+@media (max-width: 900px) {
+  .hero-landing-redesign .hero-centered-content {
+    width: min(760px, calc(100vw - 44px)) !important;
+  }
+  .hero-landing-redesign .hero-centered-title .headline-main {
+    white-space: normal;
+  }
+  .hero-landing-redesign .hero-centered-title .headline-accent {
+    white-space: normal;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .hero-landing-redesign .hero-shell.container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .hero-landing-redesign .hero-centered-title .headline-accent {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .hero-landing-redesign .hero-centered-title .headline-accent em {
+    top: 0;
+  }
+}
