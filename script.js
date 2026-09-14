@@ -1,6 +1,6 @@
 const SOUNDIFY_CONFIG = {
   // Replace these 3 values before going live.
-  WHATSAPP_NUMBER: '919999999999', // country code + number, no + or spaces
+  WHATSAPP_NUMBER: '+971544685090', // country code + number, no + or spaces
   UPI_ID: 'REPLACE_WITH_UPI_ID',    // example: soundify@okaxis
   RAZORPAY_PAYMENT_LINK: 'https://rzp.io/l/REPLACE_ME'
 };
@@ -342,7 +342,7 @@ customerForm?.addEventListener('submit', (event) => {
     return;
   }
   if (!customerForm.reportValidity()) return;
-  if (SOUNDIFY_CONFIG.WHATSAPP_NUMBER === '919999999999') {
+  if (SOUNDIFY_CONFIG.WHATSAPP_NUMBER === '+971544685090') {
     const proceed = window.confirm('The WhatsApp number is still a placeholder. The message will open using the placeholder number. Replace WHATSAPP_NUMBER in script.js before publishing. Continue for testing?');
     if (!proceed) return;
   }
